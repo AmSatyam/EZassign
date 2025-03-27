@@ -48,15 +48,15 @@ const BusinessServices = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center p-8 bg-white">
+    <div className="flex flex-col lg:flex-row items-center p-8 xl:p-16 2xl:p-24 bg-white">
      {/* myleftsection */}
       <div className="w-full lg:w-[40%] m-5">
-        <img src={EzOne} alt="ezone" className="w-[50%] h-auto" />
-        <h2 className="font-light font-serif text-3xl mt-6">
+        <img src={EzOne} alt="ezone" className="w-[50%] xl:w-[60%] 2xl:w-[70%] h-auto" />
+        <h2 className="font-light font-serif text-3xl xl:text-4xl 2xl:text-5xl mt-6">
           Suite Of Business Support Services
         </h2>
         <div className="mt-12">
-          <p className="text-gray-700 mt-8">
+          <p className="text-gray-700 mt-8 text-lg xl:text-xl 2xl:text-2xl ">
             Satyam Saurav needs an opportunity. Temporibus blanditiis, officia,
             necessitatibus magni veniam numquam ipsam fuga facilis possimus quasi aliquid!
           </p>
@@ -65,13 +65,14 @@ const BusinessServices = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="border rounded-md px-4 py-2 text-gray-800 w-full sm:w-64"
+              className="border rounded-md px-3 py-2 xl:px-6 xl:py-3 2xl:px-8 2xl:py-4 text-gray-800 w-full
+               sm:w-60"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <button
               type="submit"
-              className="bg-orange-500 text-white px-4 py-2 rounded-md mt-4 sm:mt-0"
+              className="bg-orange-500  text-white px-3 py-2 xl:px-5 xl:py-3 2xl:px-6 2xl:py-4 rounded-md mt-4 sm:mt-0"
             >
               Contact Me
             </button>
@@ -82,10 +83,10 @@ const BusinessServices = () => {
       </div>
 
       {/* yaha se right */}
-      <div className="w-full lg:w-[55%] mt-8 lg:mt-0">
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full lg:w-[65%] xl:w-[75%] 2xl:w-[80%] mt-6 lg:mt-0">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="bg-blue-950 text-sky-400 p-4 rounded-lg shadow-md">
+            <div key={index} className="bg-blue-950 text-sky-400  p-2 lg:p-6 xl:p-8 2xl:p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-2 text-lg font-semibold">
                 <span>{service.icon}</span>
                 {service.title}
